@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="car" class="core.beans.Car">
+		<property name="carNm" value="Farari"/>
+	</bean>
+	
+	<bean id="bike" class="core.beans.Bike">
+		<property name="bikeNm" value="suzuki ninja"/>
+	</bean>
+	
+	<bean id="fplane" class="core.beans.FighterPlane">
+		<property name="fplaneNm" value="Rafel"/>
+	</bean>
+	
+	<bean class="core.helper.InstanceTarckerBeanPostProcessor"></bean>
+</beans>
